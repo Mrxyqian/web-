@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>皇室战争网</title>
+    <link rel="stylesheet" href="picturestyle.css">
+  </head>
+    <header>
+    <h1>皇室战争网</h1>
+    <img src="picture/supercell.jpg" alt="工作室图片">
+    <nav>
+    <ul>
+      <li><a href="index.html">主页</a></li>
+      <li><a href="介绍.html">特殊模式介绍</a></li>
+      <li><span>图片</span></li>
+      <li><a href="视频&音频.html">视频</a></li>
+      <li><a href="论坛.html">论坛</a></li>
+    </ul>
+  </nav>
+  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      /* CSS 对html结构做装饰 */
+      * {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        display: flex;
+        /* 弹性布局 */
+        overflow: hidden;
+      }
+      figure {
+        flex: 0.1;
+        /* 平分父容器宽度 */
+        transition: all 1.5s;
+      }
+      figure:hover {
+        flex: 1;
+        transform: scale(1.2);
+        /* 鼠标悬停时放大 */
+      }
+      img {
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+	  <h2>精美壁纸</h2>   
+          <div class="row">  
+            <figure>  
+              <img src="picture/壁纸1.jpg"  
+              alt="图片1"  
+              width="350"  
+              height="250">
+              <figcaption>“当你看到公主时觉得很温柔，那可能是你身上着火了”</figcaption>  
+            </figure>  
+            <figure>  
+              <img src="picture/壁纸2.jpg"  
+              alt="图片2"  
+              width="350"  
+              height="250"> 
+              <figcaption>迷你皮卡已经锁定你为pancake</figcaption>   
+            </figure>  
+          </div>  
+          <div class="row">  
+            <figure>  
+              <img src="picture/壁纸3.jpg"  
+              alt="图片3"  
+              width="350"  
+              height="250">  
+              <figcaption>加油啊！</figcaption>  
+            </figure>  
+            <figure>  
+              <img src="picture/壁纸4.jpg"  
+              alt="图片4"  
+              width="350"  
+              height="250">  
+              <figcaption>金色小骷髅！</figcaption>  
+            </figure>  
+          </div>  
+        </article>
+    </main>
+<footer>
+      <p>网站作者：钱马刘</p>
+</footer>
+  </body>
+  </html>
+</html>

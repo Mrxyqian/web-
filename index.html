@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>皇室战争网</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <header>
+    <div id="user-greeting" class="user-greeting">
+        欢迎, <span id="username">访客</span>!
+    </div>
+    <h1>皇室战争网</h1>
+    
+    <img src="picture/supercell.jpg" alt="工作室图片">
+    <nav>
+    <ul>
+      <li><span>主页</span></li>
+      <li><a href="介绍.html">特殊模式介绍</a></li>
+      <li><a href="图片.html">图片</a></li>
+      <li><a href="视频&音频.html">视频</a></li>
+      <li><a href="论坛.html">论坛</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <script>
+    // 页面加载时检查用户名
+    document.addEventListener('DOMContentLoaded', function () {
+        const storedUsername = localStorage.getItem('username');
+        if (storedUsername) {
+            document.getElementById('username').textContent = storedUsername;
+        } else {
+            document.getElementById('username').textContent = '访客';
+        }
+    });
+  </script>
+
+  <main>
+    <article>
+      <h2>欢迎</h2>
+      <p class="floating-text">欢迎来到"皇室战争世界"—— 一个专注于芬兰游戏《皇室战争》的综合性网站。在这里，您可以找到关于《皇室战争》的各种信息，包括游戏介绍、卡组推荐、实战视频，以及我们自建的吐槽论坛。</p>
+      <hr />
+      <p class="floating-text">在"皇室战争世界"，我们致力于为此游戏爱好者提供一个较为全面、多元化的交流平台。我们的网站内容包括游戏介绍，详细介绍了《皇室战争》的主要玩法、特殊模式和特色亮点。此外，我们还提供了一个丰富的图片库，收录了大量精美的《皇室战争》角色图片和场景截图。</p>
+      <hr />
+      <p class="floating-text">在视频部分，我们收集了《皇室战争》的精彩实战片段，供您随时观看和学习相关打法思路。这些视频不仅可以让您提升技术，还能让您感受到《皇室战争》游戏中的变幻莫测。</p>
+      <hr />
+      <p class="floating-text">除了以上内容，我们还为您打造了一个专属的皇室战争论坛。在这里，您可以与其他该游戏的爱好者分享心得、讨论卡组、吐槽卡牌改动。我们鼓励大家积极发表自己的看法，分享对《皇室战争》的热爱与感悟。</p>
+      <hr />
+      <p class="floating-text">"皇室战争世界"致力于为广大该游戏爱好者提供一个优质、便捷的交流平台。我们诚挚邀请您加入我们的大家庭，与我们一起分享对《皇室战争》的热爱，共同度过美好的时光。</p>
+      <hr />
+      <p class="floating-text">后续时间充裕的话可能会提供一些更加顺应版本的卡组思路和实战视频，欢迎随时回来！！</p>
+</article>
+<aside>
+      <a href="picture/侧边栏.png"><img src="picture/侧边栏.png" alt="点击缩略图查看完整照片"></a>
+      <a href="picture/侧边栏2.png"><img src="picture/侧边栏2.png" alt="点击缩略图查看完整照片"></a>
+</aside>
+</main>
+<footer>
+      <p>网站作者：钱马刘</p>
+</footer>
+</body>
+</html>

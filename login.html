@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0970ed;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            background-color: #164fd5;
+        }
+
+        .container {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 登录表单 -->
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="用户名" required>
+            <input type="password" id="login-password" placeholder="密码" required>
+            <button type="submit">登录</button>
+        </form>
+      
+        <!-- 注册表单 -->
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="用户名" required>
+            <input type="password" id="register-password" placeholder="密码" required>
+            <button type="submit">注册</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
